@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StarWars</title>
-    <link rel="stylesheet" href="Web.css" />
+    <link rel="stylesheet" href="Web.css" />    
   </head>
   <body>
     <img src="Sourse/Photo_SW/all.webp" class="img_up" />
@@ -12,14 +12,15 @@
       <nav>
         <ul class="menu">
           <li class="logo">SW</li>
-          <button class="item">Сюжет</button>
-          <button class="item">Фильмы</button>
-          <button class="item">Герои</button>
+          <button class="item" onclick="Show_Story_Line()">Сюжет</button>
+          <button class="item" onclick="Show_Films()">Фильмы</button>
+          <button class="item" onclick="Show_Heros()">Кодекс</button>
           <button class="item">Техника</button>
         </ul>
       </nav>
     </header>
-    <p class="plot_story">
+    <div id="storyline" class="plot_story">
+      <p >
       «Звёздные во́йны» (англ. Star Wars) — медиафраншиза в жанре эпической
       космической оперы, включающая в себя 12 художественных фильмов (9 эпизодов
       основной саги, также известна как «Сага Скайуокеров», 2 фильма «историй» и
@@ -29,7 +30,7 @@
       вселенной «Звёздных войн», задуманной и реализованной американским
       режиссёром Джорджем Лукасом в конце 1970-х годов, позднее расширенной.
     </p>
-    <p class="plot_story">
+    <p >
       «Звёздные войны» занимают второе место в истории по общим кассовым сборам
       среди всех кинофраншиз, уступая только серии фильмов кинематографической
       вселенной Marvel. В 2020 году общая стоимость франшизы «Звёздных войн»
@@ -52,11 +53,206 @@
       составляет более 10 миллиардов долларов США, и в настоящее время она
       является третьей самой кассовой кинофраншизой.
     </p>
-    <div class="gridContainer">
-      <div class="box topbar">Заголовок</div>
-      <div class="box side">Боковая панель</div>
-      <div class="box main-content">Основное содержание</div>
-      <div class="box footer">Footer</div>
+    </div>    
+    <div id="films_lines" class="hierarchy">
+      <div id="sw1_" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_1.jfif" alt="" />
+        <h1>Звёздные войны: Эпизод 1 Скрытая угроза</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 1999</p>
+        <p><b>Режиссер:</b>  Джордж Лукас</nav></p>
+        <P><b>Тип:</b> <em>фильм </em> 2 ч 16 мин</P>
+      </div>
+      <div id="sw2" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_2.jfif" alt="" />
+        <h1>Звёздные войны: Эпизод 2 Атака клонов</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2002</p>
+        <p><b>Режиссер:</b>  Джордж Лукас</nav></p>
+        <P><b>Тип:</b> <em>фильм </em> 2 ч 22 мин</P>
+      </div>
+      <div id="sw2_1" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_2_1_Clone.jpg" alt="" />
+        <h1>Звездные войны: Войны клонов</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2008</p>
+        <p><b>Режиссер:</b>  Дэйв Филони</nav></p>
+        <P><b>Тип:</b> <em>сериал </em> 7 сезонов</P>
+      </div>
+      <div id="sw3" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_3.jpg" alt="" />
+        <h1>Звёздные войны: Эпизод 3 Месть ситхов</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2002</p>
+        <p><b>Режиссер:</b>  Джордж Лукас</nav></p>
+        <P><b>Тип:</b> <em>фильм </em> 2 ч 20 мин</P>
+      </div>
+      <div id="sw3_1" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_3_1_Batch.png" alt="" />
+        <h1>Звёздные войны: Бракованная партия</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2021</p>
+        <p><b>Режиссер:</b>  Дэйв Филони</nav></p>
+        <P><b>Тип:</b> <em>сериал </em> 2 сезона ПОКА</P>
+      </div>
+      <div id="sw3_2" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_3_2_Solo.jpg" alt="" />
+        <h1>Звёздные войны: Хан Соло,  Истории</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2018</p>
+        <p><b>Режиссер:</b>  Рон Ховард</nav></p>
+        <P><b>Тип:</b> <em>фильм </em> 2 ч 15 мин</P>
+      </div>
+      <div id="sw3_3" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_3_3_Kenobi.jpg" alt="" />
+        <h1>Оби-Ван Кеноби</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2022</p>
+        <p><b>Режиссер:</b> Disney</nav></p>
+        <P><b>Тип:</b> <em>сериал </em> 1 сезон ВСЕГО</P>
+      </div>
+      <div id="sw3_4" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_3_4_P.jpg" alt="" />
+        <h1>Звёздные войны: Повстанцы</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2014</p>
+        <p><b>Режиссер:</b> Disney</nav></p>
+        <P><b>Тип:</b> <em>сериал </em> 4 сезона ВСЕГО</P>
+      </div>
+      <div id="sw3_5" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_3_5_Andor.jpg" alt="" />
+        <h1>Андор</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2022</p>
+        <p><b>Режиссер:</b> Disney</nav></p>
+        <P><b>Тип:</b> <em>сериал </em> 1 сезон ПОКА</P>
+      </div>
+      <div id="sw3_6" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_3_6_Rogue_One.jpg" />
+        <h1>Звёздные войны: Изгой-один, Истории</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2016</p>
+        <p><b>Режиссер:</b>  Гарет Эдвардс</nav></p>
+        <P><b>Тип:</b> <em>фильм </em> 2 ч 13 мин</P>
+      </div>
+      <div id="sw_4" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_4.jpg" alt="" />
+        <h1>Звёздные войны: Эпизод 4 Новая надежда</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 1977</p>
+        <p><b>Режиссер:</b>  Джордж Лукас</nav></p>
+        <P><b>Тип:</b> <em>фильм </em> 2 ч 1 мин</P>
+      </div>
+      <div id="sw_5" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_5.jpg" alt="" />
+        <h1>Звездные войны: Эпизод 5 Империя наносит ответный удар</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 1980</p>
+        <p><b>Режиссер:</b>  Ирвин Кершнер</nav></p>
+        <P><b>Тип:</b> <em>фильм </em> 2 ч 4 мин</P>
+      </div>
+      <div id="sw_6" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_6.jpg" alt="" />
+        <h1>Звёздные войны: Эпизод 6 Возвращение Джедая</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 1983</p>
+        <p><b>Режиссер:</b>  Ричард Маркуанд</nav></p>
+        <P><b>Тип:</b> <em>фильм </em> 2 ч 11 мин</P>
+      </div>
+      <div id="sw_6_1" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_6_1_Mandalorion.jpg" />
+        <h1>Мандалорец</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2019</p>
+        <p><b>Режиссер:</b> Джордж Лукас</nav></p>
+        <P><b>Тип:</b> <em>сериал </em> 3 сезона ПОКА</P>
+      </div>
+      <div id="sw_6_2" class="plot_part">
+        <img
+          class="Photo_SW"
+          src="Sourse/Photo_SW/Films/SW_6_2_Book_Boby_Fett.jpg"
+          alt=""
+        />
+        <h1>Книга Бобы Фетта</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2021</p>
+        <p><b>Режиссер:</b> Джордж Лукас</nav></p>
+        <P><b>Тип:</b> <em>сериал </em> 2 сезона ПОКА</P>
+      </div>
+      <div id="sw_6_3" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_6_3_Ahsoka.jpg" alt="" />
+        <h1>Асока</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2023</p>
+        <p><b>Режиссер:</b> Джордж Лукас</nav></p>
+        <P><b>Тип:</b> <em>сериал </em> 1 сезон ПОКА</P>
+      </div>
+      <div id="sw_6_4" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_6_4_R.jpg" alt="" />
+        <h1>Звездные войны: Сопротивление</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2018</p>
+        <p><b>Режиссер:</b> Disney</nav></p>
+        <P><b>Тип:</b> <em>сериал </em> 4 сезона ВСЕГО</P>
+      </div>
+      <div id="sw_7" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_7.jpg" alt="" />
+        <h1>Звёздные войны: Эпизод 7 Пробуждение силы</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2015</p>
+        <p><b>Режиссер:</b>  Disney</nav></p>
+        <P><b>Тип:</b> <em>фильм </em> 2 ч 18 мин</P>
+      </div>
+      <div id="sw_8" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_8.jpeg" alt="" />
+        <h1>Звёздные войны: Эпизод 8 Последние джедаи</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2017</p>
+        <p><b>Режиссер:</b>  Disney</nav></p>
+        <P><b>Тип:</b> <em>фильм </em> 2 ч 32 мин</P>
+      </div>
+      <div id="sw_9" class="plot_part">
+        <img class="Photo_SW" src="Sourse/Photo_SW/Films/SW_9.jpg" alt="" />
+        <h1>Звёздные войны: Эпизод 9 Скайуокер. Восход</h1>
+      </div>
+      <div class="text_info">
+        <p><em>Год:</em> 2019</p>
+        <p><b>Режиссер:</b>  Disney</nav></p>
+        <P><b>Тип:</b> <em>фильм </em> 2 ч 21 мин</P>
+      </div>
     </div>
-  </body>
+    <div id="codex">
+      <!-- <img id="img_codex" src="Sourse/Codex.jpg" alt=""> -->
+      <span class="Srt_Codex">Нет эмоций - есть покой</span>
+      <hr class="hr_line">
+      <span  class="Srt_Codex">Нет неведения - есть знание</span>
+      <hr class="hr_line">
+      <span  class="Srt_Codex">Нет страстей - есть ясность мыслей</span>
+      <hr class="hr_line">
+      <span  class="Srt_Codex">Нет хаоса - есть гармония</span>
+      <hr class="hr_line">
+      <span  class="Srt_Codex">Нет смерти - есть Великая Сила</span>       
+    </div>
+    <div id="technic"> </div>
+  </body> 
+  <script src="main.js"></script>
 </html>
