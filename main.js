@@ -1,7 +1,7 @@
 let obg_films = document.getElementById("films_lines");
 let obj_Story = document.getElementById("storyline");
 let obj_Codex = document.getElementById("codex");
-let obj_Technic = document.getElementById("technic");
+// let obj_Technic = document.getElementById("technic");
 
 //времено
 All_Close();

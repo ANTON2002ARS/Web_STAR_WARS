@@ -113,6 +113,32 @@ body {
   margin: 28px;
 }
 
+.technic_story {
+  background-color: rgb(7, 93, 119);
+  text-align: center;
+  border: 3px solid rgb(19, 18, 92);
+  margin: 12px;
+}
+
+.img_fix {
+  width: 150px;
+  height: 200px;
+  border-radius: 12px;
+}
+
+.Unit_T {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rebeccapurple;
+  margin: 12px;
+  padding: 12px;
+  box-shadow: 2px 2px 69px 51px rgba(34, 60, 80, 0.69);
+}
+
+.Unit_T p {
+  text-align: left;
+}
+
 @media (max-width: 800px) {
   .hierarchy {
     color: rgb(20, 20, 155);
